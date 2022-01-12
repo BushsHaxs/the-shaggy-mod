@@ -161,13 +161,13 @@ jobs:
           haxelib git polymod https://github.com/BushsHaxs/old-polymod.git
           haxelib git flixel-addons https://github.com/HaxeFlixel/flixel-addons
           haxelib git systools https://github.com/haya3218/systools
-          lime rebuild systools macos
+          haxelib run lime rebuild systools macos
           haxelib install systools
           haxelib install actuate
           haxelib install random
           haxelib install seedyrng
           haxelib install extension-webm
-          lime rebuild extension-webm macos
+          haxelib run lime rebuild extension-webm macos
           haxelib list
       - name: Create Version Tag
         run: echo "${{github.run_id}}" > VERSION
