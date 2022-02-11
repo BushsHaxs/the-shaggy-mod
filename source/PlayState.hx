@@ -5297,9 +5297,6 @@ class PlayState extends MusicBeatState
 					FlxG.sound.play(Paths.sound('exit'));
 					toDfS = 1;
 				case 720:
-					var video:MP4Handler = new MP4Handler();
-
-					video.playMP4(Paths.video('zoinks'));
 					video.finishCallback = function()
 					{
 						endSong();
