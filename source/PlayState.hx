@@ -5296,11 +5296,6 @@ class PlayState extends MusicBeatState
 				case 480:
 					FlxG.sound.play(Paths.sound('exit'));
 					toDfS = 1;
-				case 720:
-					video.finishCallback = function()
-					{
-						endSong();
-					}
 			}
 			if (cs_time > 220)
 			{
